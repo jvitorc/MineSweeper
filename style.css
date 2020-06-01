@@ -1,0 +1,88 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: darkcyan;
+  align-items: center;
+}
+
+h1 {
+  font-size: 80px;
+  height: 100px;
+  margin: 0px 0px 10px 0px;
+}
+
+footer {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 10px;
+  width: 60%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: solid black 2px;
+  width: 50%;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: solid 2px black;
+}
+
+.enable {
+  background-color: aquamarine;
+}
+
+.disable {
+  background-color: darkgreen;
+}
+
+.disable:hover {
+  background-color: lightgreen;
+}
+
+.lose {
+  background-color: crimson;
+}
+
+.win {
+  background-color: darkgoldenrod;
+}
+
+.button-info {
+  padding: 10px 30px;
+  align-self: center;
+}
+
+.button-info:hover {
+  background-color: lightgray;
+}
+
+.active-button-info {
+  background-color: lightgray;
+}
